@@ -4,6 +4,12 @@ public class Main {
         int sum(int a, int b);
     }
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Sum sum = (a,b) -> {
+            int total = 0;
+            for(int i=a; i<=b; i++)
+                total+=i;
+            return total;
+        };
+        System.out.println(sum.sum(3,5));
     }
 }
