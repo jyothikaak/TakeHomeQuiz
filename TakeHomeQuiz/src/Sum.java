@@ -1,4 +1,4 @@
 @FunctionalInterface
 public interface Sum {
-    int sum(int a, int b);
+    int total(int a, int b);
 }
